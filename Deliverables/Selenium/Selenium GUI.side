@@ -1,0 +1,80 @@
+{
+  "id": "3f13d24a-f86d-491f-a263-4b26ba57c943",
+  "version": "2.0",
+  "name": "Selenium GUI",
+  "url": "https://www.codicefiscaleonline.com/codice_inverso.php",
+  "tests": [{
+    "id": "bf36960d-cfd0-484a-8148-6ffa9f4e8f35",
+    "name": "CodiceFiscaleVerificaSesso",
+    "commands": [{
+      "id": "8dfe8567-444a-4583-9591-f4314bd367c5",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.codicefiscaleonline.com/codice_inverso.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3fcb89c-496f-4bf5-863c-bc62e45edcf5",
+      "comment": "",
+      "command": "click",
+      "target": "name=codice_fiscale",
+      "targets": [
+        ["name=codice_fiscale", "name"],
+        ["css=.input > input", "css:finder"],
+        ["xpath=//input[@name='codice_fiscale']", "xpath:attributes"],
+        ["xpath=//form[@id='calcolo']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d302b407-4957-40ee-b51e-d6ec74666301",
+      "comment": "",
+      "command": "type",
+      "target": "name=codice_fiscale",
+      "targets": [
+        ["name=codice_fiscale", "name"],
+        ["css=.input > input", "css:finder"],
+        ["xpath=//input[@name='codice_fiscale']", "xpath:attributes"],
+        ["xpath=//form[@id='calcolo']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "CPNLCU97b05h501h"
+    }, {
+      "id": "bcadaf8f-bfb5-42da-8798-45e00774b805",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit > input",
+      "targets": [
+        ["css=.submit > input", "css:finder"],
+        ["xpath=//input[@value='Verifica Codice Fiscale']", "xpath:attributes"],
+        ["xpath=//form[@id='calcolo']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59866315-9d75-4d9e-be0e-0079409b2a57",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.sesso > .text",
+      "targets": [],
+      "value": "UOMO"
+    }, {
+      "id": "32f408ec-d5f4-41f4-93fd-8fa5286c33bd",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "59d7707e-1516-400f-98b1-d605bdd615da",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.codicefiscaleonline.com/codice_inverso.php"],
+  "plugins": []
+}
